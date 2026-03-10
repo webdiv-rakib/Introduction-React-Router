@@ -11,6 +11,10 @@ import About from './components/About/About.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Users from './components/Users/Users.jsx';
 import UserDetails from './components/UserDetails/UserDetails.jsx';
+// for routing three things need
+// 1. path
+// 2. element/component
+// 3. children
 const router = createBrowserRouter([
   {
     path: "/",
