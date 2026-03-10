@@ -15,6 +15,8 @@ import UserDetails from './components/UserDetails/UserDetails.jsx';
 // 1. path
 // 2. element/component
 // 3. children
+// have not got my marks yet waiting for results
+
 const router = createBrowserRouter([
   {
     path: "/",
