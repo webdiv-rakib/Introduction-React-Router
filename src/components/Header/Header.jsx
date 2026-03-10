@@ -4,9 +4,10 @@ const Header = () => {
     return (
         <div>
             <nav>
-                <span>My Website</span>
+                <h2>Menu</h2>
                 <Link to="/">Home</Link>
                 <Link to="/users">Users</Link>
+                <Link to="/posts">Posts</Link>
                 <Link to="/about">About</Link>
                 <Link to="/contact">About Us</Link>
 
