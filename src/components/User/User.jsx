@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const User = ({ user }) => {
     const { id, name, email, phone } = user;
@@ -7,13 +7,16 @@ const User = ({ user }) => {
         padding: '5px',
         borderRadius: '20px'
     }
+    const navigate = useNavigate();
+    const handleSeeDetails = () => {
+        navigate(`/user/${id}`);
+    }
     return (
         <div style={userStyle}>
             <h2>{name}</h2>
             <p>{email}</p>
             <p>{phone}</p>
-            <Link to={`/user/${id}`}>
-                <button>See Details</button></Link>
+            <button onClick={handleSeeDetails}>See Details</button>
 
         </div>
     );
